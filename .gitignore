@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 가상환경
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# MkDocs
+site/          # 빌드 산출물은 추적 X
+**/.cache/
+
+# VS Code (원하면 제외)
+.vscode/
+
+# OS 잡파일
+.DS_Store
+Thumbs.db

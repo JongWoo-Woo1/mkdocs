@@ -1,0 +1,33 @@
+site_name: Woo Jongwoo Portfolio
+site_url: https://JongWoo-Woo1.github.io/mkdocs/
+repo_url: https://github.com/JongWoo-Woo1/mkdocs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.copy
+
+plugins:
+  - search
+  - awesome-nav
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
